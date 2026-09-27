@@ -2,11 +2,14 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import {navigation} from "../config/navigation";
 
-const Sidebar = () => {
+const Sidebar = ({showSidebar, setShowSidebar}) => {
   return (
-    <div className='fixed left-0 top-0 z-50 min-h-screen w-64 bg-sidebar-bg
+    <div className={`fixed left-0 top-0 z-50 min-h-screen w-64 bg-sidebar-bg
      text-white transform transition-transform
-     duration-300 ease-in-out'>
+     duration-300 ease-in-out ${
+      showSidebar ? "translate-x-0"
+      : "-translate-x-full"
+     } md:translate-x-0`}>
       
       {/* {logo} */}
       <div className='border-b borfer-text-secondary/10
@@ -23,13 +26,14 @@ const Sidebar = () => {
           <div key={group.title}>
             <p className='mb-3 px-4 text-xs uppercase text-gray-500 font-light'>{group.title}</p>
 
-            <div>
+            <div className='space-y-4 mb-4'>
               {group.items.map((item)=>(
                 <NavLink
                   key={item.path}
                   to={item.path}
+                  onClick={()=>setShowSidebar(false)}
                   className={({isActive})=> `
-                    flex items-center gap-3 rounded-lg
+                    relative flex items-center gap-3 rounded-lg
                     px-4 py-3 text-sm ${
                       isActive
                       ? "bg-sidebar-active-light text-sidebar-text-active"
@@ -37,9 +41,20 @@ const Sidebar = () => {
                     }
                   `}
                 >
-                  <item.icon />
-                  <span>{item.label}</span>
+                  {/* {indicator} */}
+                  {({isActive})=> (
+                    <>
+                      {isActive && (
+                        <div className='absolute left-0 top-1/2 h-8 w-1 -translate-y-1/2
+                        rounded-r-full bg-indigo-500'>
 
+                        </div>
+                      )}
+                      <item.icon />
+                      <span>{item.label}</span>
+                    </>
+                  )}
+                  
                 </NavLink>
               ))}
             </div>
