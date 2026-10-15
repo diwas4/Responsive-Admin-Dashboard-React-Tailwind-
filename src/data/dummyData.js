@@ -1,16 +1,16 @@
 export const dashboardData = {
   stats: {
-    totalUsers: 447,
-    activeUsers: 302,
-    totalOrders: 1200,
-    revenue: 49856,
-    growth: 9.5,
+    totalUsers: 232,
+    activeUsers: 173,
+    totalOrders: 1100,
+    revenue: 41856,
+    growth: 8.5,
   },
 
   recentOrders: [
     {
       id: 1,
-      customer: "Diwas Lamichhane",
+      customer: "Nishab Rupakheti",
       amount: 1200,
       status: "Completed",
       date: "2026-08-10",
@@ -24,28 +24,28 @@ export const dashboardData = {
     },
     {
       id: 3,
-      customer: "Amit Kumar",
+      customer: "Ajesh Kasaju Shrestha",
       amount: 3599,
       status: "Shipped",
       date: "2026-08-09",
     },
     {
       id: 4,
-      customer: "Sneha Reddy",
+      customer: "Sandesh Tamang",
       amount: 1299,
       status: "Completed",
       date: "2026-08-09",
     },
     {
       id: 5,
-      customer: "Vikram Singh",
+      customer: "Upendra Panta",
       amount: 4999,
       status: "Cancelled",
       date: "2026-08-08",
     },
     {
       id: 6,
-      customer: "Neha Jain",
+      customer: "Shisam Regmi",
       amount: 799,
       status: "Completed",
       date: "2026-08-08",
@@ -64,16 +64,16 @@ export const usersData = {
   items: [
     {
       id: 1,
-      name: "Diwas Lamichhane",
-      email: "lamichhanediwas7@gmail.com",
-      role: "Admin",
-      status: "Active",
+      name: "Aayush Tharu",
+      email: "chaudharyaayush@gmail.com",
+      role: "Viewer",
+      status: "Inactive",
       joined: "2026-01-15",
     },
     {
       id: 2,
-      name: "Elliot Alderson",
-      email: "elliot@example.com",
+      name: "John Neupane",
+      email: "neupanejohn@gmail.com",
       role: "Editor",
       status: "Active",
       joined: "2026-02-20",
@@ -88,8 +88,8 @@ export const usersData = {
     },
     {
       id: 4,
-      name: "Sneha Reddy",
-      email: "sneha@example.com",
+      name: "Rupak Shrestha",
+      email: "rupakvikings@example.com",
       role: "Editor",
       status: "Active",
       joined: "2026-04-05",
@@ -104,14 +104,22 @@ export const usersData = {
     },
     {
       id: 6,
-      name: "Neha Jain",
-      email: "neha@example.com",
+      name: "Diwas Lamichhane",
+      email: "lamichhanediwas7@gmail.com",
+      role: "Admin",
+      status: "Active",
+      joined: "2026-06-04",
+    },
+    {
+      id: 7,
+      name: "Shisam Regmi",
+      email: "sregmi@example.com",
       role: "Viewer",
       status: "Active",
       joined: "2026-06-18",
     },
     {
-      id: 7,
+      id: 8,
       name: "Deepak Gupta",
       email: "deepak@example.com",
       role: "Editor",
@@ -119,16 +127,16 @@ export const usersData = {
       joined: "2026-07-01",
     },
     {
-      id: 8,
-      name: "Kavya Nair",
-      email: "kavya@example.com",
+      id: 9,
+      name: "Prashant Panta",
+      email: "prashantcopper@example.com",
       role: "Admin",
       status: "Active",
       joined: "2026-07-22",
     },
   ],
 
-  total: 8,
+  total: 9,
   page: 1,
   limit: 10,
 };
@@ -194,7 +202,7 @@ export const ordersData = {
   items: [
     {
       id: 101,
-      customer: "Diwas Lamichhane",
+      customer: "Nishab Rupakheti",
       total: 1200,
       status: "Completed",
       date: "2026-08-10",
@@ -210,7 +218,7 @@ export const ordersData = {
     },
     {
       id: 103,
-      customer: "Amit Kumar",
+      customer: "Ajesh Kasaju Shrestha",
       total: 3599,
       status: "Shipped",
       date: "2026-08-09",
@@ -218,7 +226,7 @@ export const ordersData = {
     },
     {
       id: 104,
-      customer: "Sneha Reddy",
+      customer: "Shisam Regmi",
       total: 1299,
       status: "Completed",
       date: "2026-08-09",
@@ -226,7 +234,7 @@ export const ordersData = {
     },
     {
       id: 105,
-      customer: "Vikram Singh",
+      customer: "Sandesh Tamang",
       total: 4999,
       status: "Cancelled",
       date: "2026-08-08",
@@ -234,7 +242,7 @@ export const ordersData = {
     },
     {
       id: 106,
-      customer: "Neha Jain",
+      customer: "Upendra Panta",
       total: 799,
       status: "Completed",
       date: "2026-08-08",
@@ -242,7 +250,7 @@ export const ordersData = {
     },
     {
       id: 107,
-      customer: "Deepak Gupta",
+      customer: "Shisam Regmi",
       total: 6499,
       status: "Shipped",
       date: "2026-08-07",

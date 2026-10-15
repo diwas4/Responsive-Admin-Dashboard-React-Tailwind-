@@ -68,13 +68,13 @@ const Topbar = ({ showSidebar, setShowSidebar }) => {
                 className="w-12 h-12 bg-primary-dark/80 rounded-full
               flex items-center justify-center text-white shrink-0"
               >
-                AU
+                DL
               </div>
               <div>
                 <p className="text-sm text-text-primary font-medium">
-                  Admin User
+                  Diwas Lamichhane
                 </p>
-                <p className="text-xs text-gray-500">admin@gmail.com</p>
+                <p className="text-xs text-gray-500">lamichhanediwas7@gmail.com</p>
               </div>
             </div>
             {/* menu content */}
