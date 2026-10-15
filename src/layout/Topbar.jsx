@@ -41,11 +41,11 @@ const Topbar = ({ showSidebar, setShowSidebar }) => {
           rounded-full flex items-center justify-center
           "
           >
-            AU
+            DL
           </div>
 
           {/* text */}
-          <span className="a">Admin User</span>
+          <span className="a">Diwas Lamichhane</span>
 
           {/* icon */}
           <span>

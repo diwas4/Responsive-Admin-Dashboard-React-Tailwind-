@@ -15,7 +15,7 @@ const Sidebar = ({showSidebar, setShowSidebar}) => {
       <div className='border-b borfer-text-secondary/10
       text-white px-6 py-5'>
         <h1 className='text-xl font-semibold'>
-          Admin <span className='text-indigo-400 font-light'>Hub</span>
+          Bytes <span className='text-indigo-400 font-light'>Yatra</span>
         </h1>
 
       </div>
